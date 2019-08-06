@@ -1,0 +1,97 @@
+.theme() {
+  .layout-page {
+    background: @theme-bg-color;
+  }
+
+  .ant-layout-header {
+    background: @theme-header-bg-color;
+
+    .header {
+      .toggle-aside-btn {
+        i {
+          color: @theme-toggle-aside-btn-color;
+        }
+      }
+      .logo {
+        h1 {
+          color: @theme-header-logo-color;
+        }
+      }
+
+      // 顶栏菜单
+      .header-menu {
+        .ant-menu-horizontal {
+          .ant-menu-item > a {
+            color: @theme-header-menu-color;
+          }
+
+          .ant-menu-item,
+          .ant-menu-submenu {
+            &:hover {
+              background: @theme-header-menu-selected-color;
+            }
+          }
+
+          .ant-menu-item-selected {
+            background: @theme-header-menu-selected-color;
+          }
+        }
+      }
+
+      .header-right .action {
+        color: @theme-header-right-action-color;
+        &:hover {
+          background: @theme-header-right-action-hover-bg-color;
+        }
+      }
+    }
+  }
+
+  .ant-layout-sider {
+    background: @theme-layout-sider-bg-color;
+
+    .nav-menu-wrapper {
+      .ant-menu {
+        color: @theme-sider-menu-color;
+        background: @theme-sider-bg-color;
+
+        .ant-menu-item {
+          a {
+            color: @theme-sider-menu-color;
+          }
+
+          &.ant-menu-item-selected {
+            background: @theme-sider-menu-selected-bg-color;
+            a {
+              color: @theme-sider-menu-selected-color;
+            }
+            &:after {
+              border: 0;
+            }
+          }
+        }
+
+        .ant-menu-item-active,
+        .ant-menu-item:hover,
+        .ant-menu-submenu-active,
+        .ant-menu-submenu-title:hover,
+        .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open {
+          color: @theme-sider-menu-selected-color;
+          background: @theme-sider-menu-selected-bg-color;
+        }
+      }
+
+      .header-aside-menu-empty {
+        .aside-menu-empty {
+          background: @theme-aside-menu-empty-bg-color;
+          i {
+            color: @theme-aside-menu-empty-text-color;
+          }
+          span {
+            color: @theme-aside-menu-empty-text-color;
+          }
+        }
+      }
+    }
+  }
+}

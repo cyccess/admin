@@ -1,0 +1,100 @@
+.menu-tree {
+  a {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 10px 8px 18px;
+    line-height: 24px;
+    cursor: pointer;
+    color: #666;
+    transition: all 0.2s;
+  }
+
+  a.active {
+    color: #1890ff;
+    background: #e6f7ff;
+    border-right: 3px solid #1890ff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background: 0 0 !important;
+    box-shadow: 0 0 8px 2px #eee;
+  }
+
+  a .title {
+    flex: 1 1 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  a .title .title-text {
+    max-width: 70%;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+  }
+
+  a .title .title-action {
+    margin-left: 0;
+    cursor: pointer;
+    opacity: 0.4;
+  }
+
+  a .title .title-action i {
+    font-size: 16px !important;
+    margin-left: 5px;
+  }
+
+  a .title .title-action:hover {
+    opacity: 0.8;
+  }
+
+  a i {
+    margin-right: 3px;
+    font-size: 14px;
+    vertical-align: middle;
+    color: #aaa;
+  }
+
+  a .anticon-caret-right:hover {
+    color: #333;
+  }
+
+  a.lv0 {
+    padding-left: 10px;
+  }
+  a.lv1 {
+    padding-left: 30px;
+  }
+  a.lv2 {
+    padding-left: 50px;
+  }
+  a.lv3 {
+    padding-left: 70px;
+  }
+  a.lv4 {
+    padding-left: 90px;
+  }
+  a.lv5 {
+    padding-left: 110px;
+  }
+
+  a .anticon-caret-right {
+    transition: all 0.2s cubic-bezier(0.4, 0.1, 0.5, 1) 0.1s;
+  }
+
+  .v-hidden {
+    visibility: hidden;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .rotate-caret {
+    transform: rotate(45deg);
+  }
+}

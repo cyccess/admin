@@ -1,0 +1,38 @@
+// 过渡动画 横向渐变
+.page-transition-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+.page-transition-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+.page-transition-leave-active,
+.page-transition-enter-active {
+  transition: all 0.5s;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #eceff4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d9dfe8;
+  min-height: 150px;
+  min-width: 150px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+  background: #bcc6d8;
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background: #bcc6d8;
+}
